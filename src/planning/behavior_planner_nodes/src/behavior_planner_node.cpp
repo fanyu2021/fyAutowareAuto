@@ -50,7 +50,7 @@ void BehaviorPlannerNode::init()
   const auto cg_to_vehicle_center =
     ( (cg_to_front_m + front_overhang_m) - (rear_overhang_m + cg_to_rear_m) ) * 0.5F;
 
-  const behavior_planner::PlannerConfig config{
+  const behavior_planner::PlannerConfig config{ //显式定义config
     static_cast<float32_t>(declare_parameter("goal_distance_thresh").get<float64_t>()),
     static_cast<float32_t>(declare_parameter("stop_velocity_thresh").get<float64_t>()),
     static_cast<float32_t>(declare_parameter("heading_weight").get<float64_t>()),

@@ -76,7 +76,7 @@ class BEHAVIOR_PLANNER_NODES_PUBLIC BehaviorPlannerNode : public rclcpp::Node
 public:
   /// \brief default constructor, starts the planner
   /// \param[in] options name of the node for rclcpp internals
-  explicit BehaviorPlannerNode(const rclcpp::NodeOptions & options);
+  explicit BehaviorPlannerNode(const rclcpp::NodeOptions & options);// rclcpp::NodeOptions作用
 
 private:
   //  ROS Interface
